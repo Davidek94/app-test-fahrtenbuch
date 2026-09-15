@@ -1,4 +1,4 @@
-const CACHE = 'mein-fahrtenbuch-v1';
+const CACHE = 'mein-fahrtenbuch-v2';
 const ASSETS = ['./', './index.html', './manifest.json'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)));
